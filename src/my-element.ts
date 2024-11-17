@@ -43,12 +43,16 @@ export class MyElement extends LitElement {
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
+      <p>
+        Hello2
+      </p>
       <slot></slot>
     `;
   }
 
   private _onClick() {
     this.count++;
+    console.log('count is now', this.count);
     this.dispatchEvent(new CustomEvent('count-changed'));
   }
 

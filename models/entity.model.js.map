@@ -1,0 +1,1 @@
+{"version":3,"file":"entity.model.js","sourceRoot":"","sources":["../src/models/entity.model.ts"],"names":[],"mappings":"AACA,MAAM,CAAC,MAAM,aAAa,GAAG,CAAC,YAAY,EAAE,OAAO,EAAE,UAAU,CAAU,CAAC","sourcesContent":["\nexport const entitiesArray = ['department', 'venue', 'position'] as const;\n\nexport type Entity = typeof entitiesArray[number];"]}
